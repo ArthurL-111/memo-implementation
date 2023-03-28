@@ -1,0 +1,11 @@
+.car {
+    display: inline-block;
+    border: 2px solid black;
+    margin: 20px;
+    width: 120px;
+    height: 100px;
+}
+
+.sell-btn {
+    margin: 40px;
+}
