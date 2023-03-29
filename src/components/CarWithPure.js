@@ -1,8 +1,8 @@
 import React from 'react'
 import './CarsApp.css';
-import { myMemo } from '../hoc/myMemo';
+import myPureComponent from '../shared/myPureComponent';
 
-class Car extends React.Component {
+class CarWithPure extends myPureComponent {
 
     componentDidUpdate(){
         console.log(this.props.make, 'updating...')
@@ -19,4 +19,4 @@ class Car extends React.Component {
     }
 }
 
-export default myMemo(Car);
+export default CarWithPure;

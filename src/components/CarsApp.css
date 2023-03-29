@@ -6,6 +6,13 @@
     height: 100px;
 }
 
+.cars-wrapper {
+    border: 1px solid black;
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+}
+
 .sell-btn {
     margin: 40px;
 }

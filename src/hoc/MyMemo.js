@@ -17,7 +17,7 @@ export const myMemo = (WrappedComponent) => {
         }
 
         shouldComponentUpdate(nextProps, nextState) {
-            return !this.shallowCompare(this.props, nextProps);
+            return !this.shallowCompare(this.props, nextProps) || !this.shallowCompare(this.state, nextState);
         }
 
         render() {

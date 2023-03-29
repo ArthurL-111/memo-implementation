@@ -1,5 +1,6 @@
 import React from 'react'
-import Car from './Car';
+import CarWithMemo from './CarWithMemo';
+import CarWithPure from './CarWithPure';
 import SellButton from './SellButton';
 
 class CarsApp extends React.Component {
@@ -53,15 +54,28 @@ class CarsApp extends React.Component {
     render() {
         return(
             <React.Fragment>
-                <div>
+                <div className='cars-wrapper'>
+                    <h4>Implemented myMemo</h4>
                     {this.state.cars.map((car) => (
-                        <Car 
+                        <CarWithMemo
                             key={car.id}
                             make={car.make}
                             quantity={car.quantity}
                         />
                     ))}
                 </div>
+
+                <div className='cars-wrapper'>
+                    <h4>Implemented myPureComponent</h4>
+                    {this.state.cars.map((car) => (
+                        <CarWithPure
+                            key={car.id}
+                            make={car.make}
+                            quantity={car.quantity}
+                        />
+                    ))}
+                </div>
+
                 <div>
                     {this.state.cars.map((car, index) => (
                         <SellButton 
