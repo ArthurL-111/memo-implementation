@@ -6,7 +6,7 @@ class Header extends React.Component{
         const {handleChangeActivePage} = this.props;
         return (
             <ul className='nav-bar'>
-                <li onClick={() => handleChangeActivePage('MemoNPure')}>Memo-N-PureComnent</li>
+                <li onClick={() => handleChangeActivePage('MemoNPure')}>Memo-N-PureComponent</li>
                 <li onClick={() => handleChangeActivePage('Practice')}>Immutable Practice</li>
             </ul>
         );

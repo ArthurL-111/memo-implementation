@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import './Practice.css'
 
 const origin_state = {
     "id": "001",
@@ -89,7 +90,7 @@ export const Practice = () => {
             <p>==================================</p>
             <p>state.children[0].children[0].path[1]: {state.children[0].children[0].path[1]}</p>
             <p>state.children[1].children[1].children[0].path[2]: {state.children[1].children[1].children[0].path[2]}</p>
-            <button type="" onClick={handelClick}>Update State Immutably</button>
+            <button onClick={handelClick} className='practice-btn'>Update State Immutably</button>
         </div>
     );
 };
