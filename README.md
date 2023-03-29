@@ -5,6 +5,7 @@
 
 ### myMemo: `src/hoc/myMemo.js`
 ### myPureComponent: `src/shared/myPureComponent.js`
+### Immutable Practice: `src/components/Practice/Practice.js`
 
 ## Screen Shot
 
