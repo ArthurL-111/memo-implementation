@@ -34,18 +34,6 @@ class CarsApp extends React.Component {
                 }
             })
             const nextState = {...prev, cars: newCars};
-
-            // const nextState = {
-            //     ...prev,
-            //     cars: [
-            //       ...prev.cars.slice(0, index),
-            //       {
-            //         ...prev.cars[index],
-            //         quantity: prev.cars[index].quantity - 1,
-            //       },
-            //       ...prev.cars.slice(index + 1),
-            //     ],
-            //   };
             
             return nextState;
         })
