@@ -1,6 +1,6 @@
 import React from 'react'
 import './CarsApp.css';
-import myPureComponent from '../shared/myPureComponent';
+import myPureComponent from '../../shared/myPureComponent';
 
 class CarWithPure extends myPureComponent {
 
