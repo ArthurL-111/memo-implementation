@@ -1,6 +1,5 @@
 import React from 'react'
 import './CarsApp.css';
-import { memo } from 'react';
 import { myMemo } from '../hoc/myMemo';
 
 class Car extends React.Component {
