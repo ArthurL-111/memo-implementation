@@ -1,6 +1,7 @@
 import React from 'react'
 import './CarsApp.css';
 import { memo } from 'react';
+import { myMemo } from '../hoc/myMemo';
 
 class Car extends React.Component {
 
@@ -19,4 +20,4 @@ class Car extends React.Component {
     }
 }
 
-export default Car;
+export default myMemo(Car);
